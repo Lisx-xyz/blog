@@ -161,22 +161,8 @@
             
             <span class="tag">
                 
-                <a href="/blog/tags/hello" style="color: #00a596">
-                    hello
-                </a>
-            </span>
-            
-            <span class="tag">
-                
-                <a href="/blog/tags/hexo" style="color: #ff7d73">
+                <a href="/blog/tags/hexo" style="color: #03a9f4">
                     hexo
-                </a>
-            </span>
-            
-            <span class="tag">
-                
-                <a href="/blog/tags/markdown" style="color: #ff7d73">
-                    markdown
                 </a>
             </span>
             
@@ -184,7 +170,7 @@
         
     </div>
     <div class="content" v-pre>
-        <p>我是短小精悍的文章摘要(๑•̀ㅂ•́) ✧</p>
+        <p>Hexo 是一个快速、简洁且高效的博客框架。本文介绍hexo在centos7.8下的安装和简单使用。</p>
 <span id="more"></span>
 <h1>Hexo安装和使用</h1>
 
@@ -206,6 +192,12 @@
 
 
 <h1 id="4-hexo使用"><a href="#4-hexo使用" class="headerlink" title="4. hexo使用"></a>4. hexo使用</h1>
+    </div>
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css">
+    <div id="comment">
+        <div id="gitalk-container">
+        </div>
     </div>
     
 </div>
@@ -236,6 +228,23 @@
         <script src="/blog/js/particlex.js"></script>
         <script src="/blog/js/showimg.js"></script>
         
+<script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script>
+<script>
+    var clientID = "14f8ceb213e4b31810c2", clientSecret = "83116241e4bf247ba6bbee52a041f4bd40c8f2a1";
+    
+    const gitalk = new Gitalk({
+        clientID: clientID,
+        clientSecret: clientSecret,
+        repo: "",
+        owner: "Lisx-xyz",
+        admin: ["Lisx-xyz"],
+        language: "zh-CN",
+        id: location.pathname,
+        distractionFreeMode: true
+    })
+    gitalk.render("gitalk-container")
+</script>
 
-    <script src="/blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/blog/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
+
+    <script src="/blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"dialog":{"enable":true,"hitokoto":true},"model":{"jsonPath":"/blog/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>
