@@ -215,9 +215,11 @@ hexo -v
 hexo init blog
 # 根据package.json文件进行自动化安装
 npm install
-# 生成静态文件
+</code></pre>
+<h1 id="4-hexo使用"><a href="#4-hexo使用" class="headerlink" title="4. hexo使用"></a>4. hexo使用</h1><pre><code class="shell"># 生成静态文件
 hexo generate   或者   hexo g
 # 启动服务器，本机访问，访问网址  http://localhost:4000/ 
+# 可选参数  p &#123;端口号&#125;  
 hexo serve   或者   hexo s
 # 部署到github
 hexo deploy   或者   hexo d
@@ -231,7 +233,7 @@ deploy:
   repo: git@github.com:&#123;用户名&#125;/&#123;仓库名&#125;.git
   branch: main
 </code></pre>
-<h1 id="4-hexo使用"><a href="#4-hexo使用" class="headerlink" title="4. hexo使用"></a>4. hexo使用</h1>
+
     </div>
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css">
